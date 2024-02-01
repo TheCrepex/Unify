@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hola {{name}}</h1>
+    <h3>Categorias</h3>
+    {# Comentario de una sola linea #}
+
+    {% comment %}
+        Comentario de 
+        Varias 
+        Lineas    
+    {% endcomment %}
+
+    <ul>
+        {% for category in categories %}
+            {% if category == 'code' %}
+                <li><b> {{category|upper}} </b></li>
+            {% else  %}
+                <li>{{category}}</li>
+            {% endif %}
+        {% endfor %}
+        <h5>Total de categories {{categories|length}} </h5>
+    </ul>
+</body>
+
+</html>
