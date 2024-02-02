@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% block styles %} {% endblock  %}
+    <title>{% block titulo %} {% endblock  %}</title>
+</head>
+<body>
+
+    <nav>
+        <a href="{% url 'Herencia' %}">Herencia</a>
+        <a href="{% url 'Ejemplo' %}">Ejemplo</a>
+        <a href="{% url 'Otra' %}">Otra</a>
+    </nav>
+    <main>
+    {% block content %} {% endblock %}
+    </main>
+
+    <footer>
+        Unify
+    </footer>
+    {% block scripts %} {% endblock  %}
+</body>
+</html>
