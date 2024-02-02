@@ -24,3 +24,12 @@ def Dinamico(request,name):
 
 def Estaticos(request):
     return render(request,'Estaticos.html',{})
+
+def Herencia(request):
+    return render(request, 'Herencia.html', {})
+
+def Ejemplo(request):
+    return render(request, 'Ejemplo.html', {})
+
+def Otra(request):
+    return render(request, 'Otra', {})

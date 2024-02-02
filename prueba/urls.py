@@ -25,5 +25,8 @@ urlpatterns = [
     path('Adulto/<int:edad>/', views.Adulto, name='Adulto'),
     path('Simple/', views.Simple,name='Simple'),
     path('Dinamico/<str:name>', views.Dinamico, name="Dinamico"),
-    path('Estaticos/', views.Estaticos, name="Estaticos")
+    path('Estaticos/', views.Estaticos, name="Estaticos"),
+    path('Herencia/',views.Herencia, name= "Herencia"),
+    path('Ejemplo/', views.Ejemplo, name= "Ejemplo"),
+    path('Otra/', views.Otra, name= "Otra"),
 ]
