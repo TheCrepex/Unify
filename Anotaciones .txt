@@ -1,0 +1,7 @@
+.color1 { #40ffdc };
+.color2 { #00a9d4 };
+.color3 { #1c3166 };
+.color4 { #240047 };
+.color5 { #1c0021 };
+
+link de paleta de colores https://paletadecolores.com.ar/paleta/40ffdc/00a9d4/1c3166/240047/1c0021/
