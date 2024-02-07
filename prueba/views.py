@@ -19,8 +19,14 @@ def Simple(request):
 def Dinamico(request,name):
     categories = ['code', 'desing', 'marketing', 'business']
     context = {'name' : name, 'categories':categories}
-    
     return render(request, 'Dinamico.html', context)
+
+def dinamico_view(request):
+    nombre = request.POST.get('nombre', '')
+    return render(request, 'miapp/dinamico.html', {'nombre': nombre})
+
+def DinamicoForm(request):
+    return render(request,'DinamicoForm.html',{})
 
 def Estaticos(request):
     return render(request,'Estaticos.html',{})

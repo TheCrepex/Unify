@@ -18,13 +18,17 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 
+app_name = 'prueba'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('Saludo/', views.Saludo, name='Saludo'),
     path('Despedida/', views.Despedida, name='Despedida'),
     path('Adulto/<int:edad>/', views.Adulto, name='Adulto'),
-    path('Simple/', views.Simple,name='Simple'),
-    path('Dinamico/<str:name>', views.Dinamico, name="Dinamico"),
+    path('Simple/', views.Simple, name='Simple'),
+    path('Dinamico/<str:name>/', views.Dinamico, name="Dinamico"),
+    path('DinamicoForm/', views.DinamicoForm, name='DinamicoForm'),
+    path('dinamico_view/', views.dinamico_view, name='dinamico_view'),
     path('Estaticos/', views.Estaticos, name="Estaticos"),
     path('Herencia/',views.Herencia, name= "Herencia"),
     path('Ejemplo/', views.Ejemplo, name= "Ejemplo"),
